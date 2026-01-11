@@ -52,13 +52,13 @@
         .nav-links a:hover { color: var(--primary); }
 
         /* --- HERO --- */
-        .hero { padding: 80px 0; text-align: center; position: relative; }
+        .hero { padding: 60px 0 80px; text-align: center; position: relative; }
         .hero-content { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
         .hero h1 { font-size: clamp(2.4rem, 5vw, 3.8rem); font-weight: 900; line-height: 1.1; letter-spacing: -0.04em; margin-bottom: 25px; }
         .hero h1 span { color: var(--primary); }
         .hero p { font-size: 1.3rem; color: var(--text-light); max-width: 800px; margin: 0 auto 40px; }
 
-        /* --- ESTILO DE TARJETAS (Común para Programa y Metodología) --- */
+        /* --- ESTILO DE TARJETAS --- */
         .section-padding { padding: 100px 0; }
         .bg-light-section { background: var(--bg-light); }
         .section-header { text-align: center; margin-bottom: 60px; }
@@ -101,6 +101,12 @@
         .contact-left { background: var(--dark); color: var(--white); padding: 60px; display: flex; flex-direction: column; justify-content: center; }
         .contact-right { padding: 60px; }
 
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 700; font-size: 0.9rem; }
+        .form-group input, .form-group select {
+            width: 100%; padding: 14px; border: 1px solid #d1d5db; border-radius: 12px; font-size: 1rem;
+        }
+
         .btn {
             display: inline-flex; align-items: center; gap: 10px;
             padding: 18px 34px; border-radius: 16px; font-weight: 800;
@@ -138,23 +144,21 @@
         <div class="hero-content">
             <span style="font-weight: 800; color: var(--primary); letter-spacing: 2px; font-size: 0.85rem; text-transform: uppercase; margin-bottom: 25px; display: block;">Instructor Especialista: Manuel Aragonés</span>
             <h1>Crea herramientas profesionales para la <span>organización de los datos</span> de tu empresa.</h1>
-            <p>El primer Boot Camp intensivo diseñado para convertirte en experto No-Code y transformar la digitalización de tu negocio este 2026.</p>
+            <p>Aprende a digitalizar procesos empresariales complejos este 2026 con la metodología más práctica del mercado No-Code.</p>
             <div style="display: flex; gap: 20px; justify-content: center;">
-                <a href="#contacto" class="btn btn-primary">Recibir Dossier Informativo</a>
+                <a href="#contacto" class="btn btn-primary">Recibir Información</a>
             </div>
         </div>
     </section>
 
-    <!-- SECCIÓN PROGRAMA (Tarjetas Horizontales) -->
+    <!-- SECCIÓN PROGRAMA -->
     <section id="programa" class="section-padding bg-light-section">
         <div class="container">
             <div class="section-header">
                 <h2>Programa de Especialización</h2>
-                <p>Un temario completo dividido en tres pilares de conocimiento técnico.</p>
             </div>
             
             <div class="cards-container">
-                <!-- Módulo 1 -->
                 <article class="custom-card">
                     <div class="card-header">
                         <div class="card-icon"><i data-lucide="database" size="32"></i></div>
@@ -162,32 +166,19 @@
                     </div>
                     <div class="card-body">
                         <div class="card-list">
-                            <div class="card-item">
-                                <i data-lucide="check-circle-2" size="20"></i>
-                                <div class="card-item-content">
-                                    <strong>Creación y Estructura</strong>
-                                    <p>Fundamentos, tipos de datos, relaciones entre tablas y dominio del editor AppSheet.</p>
-                                </div>
+                            <div class="card-item"><i data-lucide="check-circle-2" size="20"></i>
+                                <div class="card-item-content"><strong>Creación y Estructura</strong><p>Tipos de datos, relaciones entre tablas y dominio del editor AppSheet.</p></div>
                             </div>
-                            <div class="card-item">
-                                <i data-lucide="check-circle-2" size="20"></i>
-                                <div class="card-item-content">
-                                    <strong>Gestión de Campos</strong>
-                                    <p>Uso experto de Key y Label, listas desplegables dependientes y validación de datos.</p>
-                                </div>
+                            <div class="card-item"><i data-lucide="check-circle-2" size="20"></i>
+                                <div class="card-item-content"><strong>Gestión de Campos</strong><p>Uso experto de Key y Label y listas desplegables dependientes.</p></div>
                             </div>
-                            <div class="card-item">
-                                <i data-lucide="check-circle-2" size="20"></i>
-                                <div class="card-item-content">
-                                    <strong>Filtros Avanzados (Slices)</strong>
-                                    <p>Filtrado de columnas y datos para crear experiencias de usuario personalizadas.</p>
-                                </div>
+                            <div class="card-item"><i data-lucide="check-circle-2" size="20"></i>
+                                <div class="card-item-content"><strong>Filtros Avanzados</strong><p>Slices y validación de datos para experiencias personalizadas.</p></div>
                             </div>
                         </div>
                     </div>
                 </article>
 
-                <!-- Módulo 2 -->
                 <article class="custom-card">
                     <div class="card-header">
                         <div class="card-icon"><i data-lucide="brain-circuit" size="32"></i></div>
@@ -195,32 +186,19 @@
                     </div>
                     <div class="card-body">
                         <div class="card-list">
-                            <div class="card-item">
-                                <i data-lucide="check-circle-2" size="20"></i>
-                                <div class="card-item-content">
-                                    <strong>Fórmulas Maestras</strong>
-                                    <p>Uso de SELECT, SUM, COUNT, LOOKUP y lógica condicional avanzada con IF e IFS.</p>
-                                </div>
+                            <div class="card-item"><i data-lucide="check-circle-2" size="20"></i>
+                                <div class="card-item-content"><strong>Fórmulas Maestras</strong><p>SELECT, SUM, COUNT, LOOKUP y lógica avanzada IF/IFS.</p></div>
                             </div>
-                            <div class="card-item">
-                                <i data-lucide="check-circle-2" size="20"></i>
-                                <div class="card-item-content">
-                                    <strong>Interfaz y Vistas</strong>
-                                    <p>Diseño de vistas básicas y avanzadas, dashboards y menús de navegación optimizados.</p>
-                                </div>
+                            <div class="card-item"><i data-lucide="check-circle-2" size="20"></i>
+                                <div class="card-item-content"><strong>Interfaz y Vistas</strong><p>Dashboards y menús de navegación optimizados para el usuario.</p></div>
                             </div>
-                            <div class="card-item">
-                                <i data-lucide="check-circle-2" size="20"></i>
-                                <div class="card-item-content">
-                                    <strong>Branding Corporativo</strong>
-                                    <p>Format Rules con condiciones y personalización total de logos y colores de marca.</p>
-                                </div>
+                            <div class="card-item"><i data-lucide="check-circle-2" size="20"></i>
+                                <div class="card-item-content"><strong>Branding</strong><p>Format Rules y personalización total de logos y colores de marca.</p></div>
                             </div>
                         </div>
                     </div>
                 </article>
 
-                <!-- Módulo 3 -->
                 <article class="custom-card">
                     <div class="card-header">
                         <div class="card-icon"><i data-lucide="zap" size="32"></i></div>
@@ -228,26 +206,14 @@
                     </div>
                     <div class="card-body">
                         <div class="card-list">
-                            <div class="card-item">
-                                <i data-lucide="check-circle-2" size="20"></i>
-                                <div class="card-item-content">
-                                    <strong>Acciones y Bots</strong>
-                                    <p>Exportación a CSV, navegación entre apps y automatización de procesos con Bots.</p>
-                                </div>
+                            <div class="card-item"><i data-lucide="check-circle-2" size="20"></i>
+                                <div class="card-item-content"><strong>Acciones y Bots</strong><p>Exportación a CSV, navegación entre apps y automatización con Bots.</p></div>
                             </div>
-                            <div class="card-item">
-                                <i data-lucide="check-circle-2" size="20"></i>
-                                <div class="card-item-content">
-                                    <strong>Generación de Documentos</strong>
-                                    <p>Creación de plantillas y generación automática de reportes en PDF.</p>
-                                </div>
+                            <div class="card-item"><i data-lucide="check-circle-2" size="20"></i>
+                                <div class="card-item-content"><strong>Documentos</strong><p>Generación automática de reportes e informes en PDF.</p></div>
                             </div>
-                            <div class="card-item">
-                                <i data-lucide="check-circle-2" size="20"></i>
-                                <div class="card-item-content">
-                                    <strong>Seguridad y Roles Pro</strong>
-                                    <p>Login con UserSettings, permisos por roles y menús con iconos de acceso directo.</p>
-                                </div>
+                            <div class="card-item"><i data-lucide="check-circle-2" size="20"></i>
+                                <div class="card-item-content"><strong>Seguridad Pro</strong><p>Login con UserSettings, permisos por roles y acceso directo.</p></div>
                             </div>
                         </div>
                     </div>
@@ -256,16 +222,14 @@
         </div>
     </section>
 
-    <!-- SECCIÓN METODOLOGÍA (Tarjetas Horizontales - Igual que el Temario) -->
+    <!-- SECCIÓN METODOLOGÍA -->
     <section id="metodologia" class="section-padding">
         <div class="container">
             <div class="section-header">
                 <h2>Metodología Mixta 2026</h2>
-                <p>Un sistema de aprendizaje diseñado para la implementación inmediata en entornos reales.</p>
             </div>
             
             <div class="cards-container">
-                <!-- Método 1 -->
                 <article class="custom-card">
                     <div class="card-header">
                         <div class="card-icon"><i data-lucide="video" size="32"></i></div>
@@ -273,32 +237,16 @@
                     </div>
                     <div class="card-body">
                         <div class="card-list">
-                            <div class="card-item">
-                                <i data-lucide="check-circle-2" size="20"></i>
-                                <div class="card-item-content">
-                                    <strong>Acceso Ilimitado</strong>
-                                    <p>Biblioteca de clases grabadas en alta definición disponibles las 24 horas del día.</p>
-                                </div>
+                            <div class="card-item"><i data-lucide="check-circle-2" size="20"></i>
+                                <div class="card-item-content"><strong>A tu ritmo</strong><p>Clases grabadas en HD disponibles 24/7 para que avances cuando quieras.</p></div>
                             </div>
-                            <div class="card-item">
-                                <i data-lucide="check-circle-2" size="20"></i>
-                                <div class="card-item-content">
-                                    <strong>Contenido Técnico</strong>
-                                    <p>Vídeos paso a paso que cubren desde la instalación inicial hasta integraciones complejas.</p>
-                                </div>
-                            </div>
-                            <div class="card-item">
-                                <i data-lucide="check-circle-2" size="20"></i>
-                                <div class="card-item-content">
-                                    <strong>A tu propio ritmo</strong>
-                                    <p>Sin presiones horarias. Avanza según tu disponibilidad y repite las lecciones que necesites.</p>
-                                </div>
+                            <div class="card-item"><i data-lucide="check-circle-2" size="20"></i>
+                                <div class="card-item-content"><strong>Contenido Técnico</strong><p>Vídeos paso a paso que cubren desde la instalación hasta integraciones complejas.</p></div>
                             </div>
                         </div>
                     </div>
                 </article>
 
-                <!-- Método 2 -->
                 <article class="custom-card">
                     <div class="card-header">
                         <div class="card-icon"><i data-lucide="users-2" size="32"></i></div>
@@ -306,32 +254,16 @@
                     </div>
                     <div class="card-body">
                         <div class="card-list">
-                            <div class="card-item">
-                                <i data-lucide="check-circle-2" size="20"></i>
-                                <div class="card-item-content">
-                                    <strong>Clases Presenciales Online</strong>
-                                    <p>Reuniones semanales vía Zoom para profundizar en los temas más críticos del temario.</p>
-                                </div>
+                            <div class="card-item"><i data-lucide="check-circle-2" size="20"></i>
+                                <div class="card-item-content"><strong>Directos Semanales</strong><p>Reuniones vía Zoom para resolver dudas técnicas en tiempo real.</p></div>
                             </div>
-                            <div class="card-item">
-                                <i data-lucide="check-circle-2" size="20"></i>
-                                <div class="card-item-content">
-                                    <strong>Resolución de Dudas</strong>
-                                    <p>Espacios abiertos para preguntar y solucionar problemas técnicos en tiempo real.</p>
-                                </div>
-                            </div>
-                            <div class="card-item">
-                                <i data-lucide="check-circle-2" size="20"></i>
-                                <div class="card-item-content">
-                                    <strong>Casos de Estudio</strong>
-                                    <p>Análisis de aplicaciones reales que Manuel Aragonés ha implementado en grandes empresas.</p>
-                                </div>
+                            <div class="card-item"><i data-lucide="check-circle-2" size="20"></i>
+                                <div class="card-item-content"><strong>Casos Reales</strong><p>Análisis de aplicaciones reales implementadas en empresas del sector.</p></div>
                             </div>
                         </div>
                     </div>
                 </article>
 
-                <!-- Método 3 -->
                 <article class="custom-card">
                     <div class="card-header">
                         <div class="card-icon"><i data-lucide="help-circle" size="32"></i></div>
@@ -339,26 +271,11 @@
                     </div>
                     <div class="card-body">
                         <div class="card-list">
-                            <div class="card-item">
-                                <i data-lucide="check-circle-2" size="20"></i>
-                                <div class="card-item-content">
-                                    <strong>Acompañamiento Personal</strong>
-                                    <p>Seguimiento directo de tu evolución para asegurar que dominas cada concepto.</p>
-                                </div>
+                            <div class="card-item"><i data-lucide="check-circle-2" size="20"></i>
+                                <div class="card-item-content"><strong>Acompañamiento</strong><p>Seguimiento directo para asegurar que dominas cada concepto.</p></div>
                             </div>
-                            <div class="card-item">
-                                <i data-lucide="check-circle-2" size="20"></i>
-                                <div class="card-item-content">
-                                    <strong>Soporte en Proyectos</strong>
-                                    <p>Ayuda específica para aplicar lo aprendido en los desafíos reales de tu organización.</p>
-                                </div>
-                            </div>
-                            <div class="card-item">
-                                <i data-lucide="check-circle-2" size="20"></i>
-                                <div class="card-item-content">
-                                    <strong>Comunidad Privada</strong>
-                                    <p>Networking con otros profesionales y alumnos para compartir soluciones y flujos de trabajo.</p>
-                                </div>
+                            <div class="card-item"><i data-lucide="check-circle-2" size="20"></i>
+                                <div class="card-item-content"><strong>Soporte en Proyectos</strong><p>Ayuda específica para aplicar lo aprendido en tu propia organización.</p></div>
                             </div>
                         </div>
                     </div>
@@ -367,34 +284,31 @@
         </div>
     </section>
 
-    <!-- FORMULARIO -->
+    <!-- CONTACTO (PURO HTML PARA EVITAR ERRORES JSON) -->
     <section id="contacto" class="section-padding bg-light-section">
         <div class="container">
             <div class="contact-card">
                 <div class="contact-left">
                     <h2 style="font-size: 2.5rem; margin-bottom: 25px;">Empieza Hoy</h2>
                     <p style="opacity: 0.9; margin-bottom: 40px;">No dejes pasar la oportunidad de liderar la digitalización en tu sector. Formación impartida por Manuel Aragonés.</p>
-                    <div style="display: grid; gap: 20px;">
-                        <span style="display: flex; align-items: center; gap: 15px;"><i data-lucide="mail" style="color: var(--primary);"></i> info@appsheet.es</span>
-                        <span style="display: flex; align-items: center; gap: 15px;"><i data-lucide="check-square" style="color: var(--primary);"></i> Proyectos 100% reales</span>
-                    </div>
                 </div>
                 <div class="contact-right">
-                    <form action="https://formspree.io/f/xlggrvnq" method="POST">">
+                    <!-- IMPORTANTE: SUSTITUYE TU_ID POR EL DE FORMSPREE -->
+                    <form action="https://formspree.io/f/TU_ID" method="POST">
                         <div class="form-group">
-                            <label style="display:block; margin-bottom:8px; font-weight:700;">Nombre Completo</label>
-                            <input type="text" placeholder="Tu nombre" style="width:100%; padding:14px; border:1px solid var(--border); border-radius:10px;" required>
+                            <label>Nombre Completo</label>
+                            <input type="text" name="nombre" placeholder="Tu nombre" required>
                         </div>
-                        <div class="form-group" style="margin-top:20px;">
-                            <label style="display:block; margin-bottom:8px; font-weight:700;">Email Corporativo</label>
-                            <input type="email" placeholder="email@empresa.com" style="width:100%; padding:14px; border:1px solid var(--border); border-radius:10px;" required>
+                        <div class="form-group">
+                            <label>Email Corporativo</label>
+                            <input type="email" name="email" placeholder="email@empresa.com" required>
                         </div>
-                        <div class="form-group" style="margin-top:20px;">
-                            <label style="display:block; margin-bottom:8px; font-weight:700;">Interés</label>
-                            <select style="width:100%; padding:14px; border:1px solid var(--border); border-radius:10px; background:white;">
-                                <option>Implementar en mi empresa</option>
-                                <option>Ser consultor AppSheet</option>
-                                <option>Aprender nivel avanzado</option>
+                        <div class="form-group">
+                            <label>Interés</label>
+                            <select name="interes">
+                                <option value="empresa">Implementar en mi empresa</option>
+                                <option value="consultor">Ser consultor AppSheet</option>
+                                <option value="avanzado">Aprender nivel avanzado</option>
                             </select>
                         </div>
                         <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; margin-top:30px;">Enviar Solicitud</button>
@@ -411,5 +325,6 @@
     <script>lucide.createIcons();</script>
 </body>
 </html>
+
 
 
